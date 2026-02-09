@@ -1,60 +1,44 @@
 import Reveal from './Reveal'
+import {
+  CommandLineIcon,
+  MegaphoneIcon,
+  CpuChipIcon,
+  PaintBrushIcon,
+  DevicePhoneMobileIcon,
+  LightBulbIcon
+} from '@heroicons/react/24/outline';
 
 function Services() {
   const services = [
     {
-      title: "Custom Web Applications",
-      desc: "Scalable, fast, and secure apps built for your specific business needs. We handle everything from frontend polish to backend logic.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      )
+      title: "Software Engineering",
+      desc: "Custom web applications, secure APIs, and SaaS platforms built with modern stacks (React, Node, Python) for scale and performance.",
+      icon: <CommandLineIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Admin Dashboards & Internal Tools",
-      desc: "Streamline operations with custom tools that your team will actually enjoy using. Automate workflows and visualize data clearly.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-        </svg>
-      )
+      title: "Digital Marketing",
+      desc: "Data-driven SEO, PPC campaigns, and content strategies that drive qualified traffic and measurable revenue growth.",
+      icon: <MegaphoneIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Backend & API Development",
-      desc: "Robust server-side architecture that powers your product. Secure, documented, and built to handle growth without breaking.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-        </svg>
-      )
+      title: "AI & Automation",
+      desc: "Intelligent chatbots, workflow automation, and predictive analytics to optimize operations and reduce manual work.",
+      icon: <CpuChipIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Payments & Integrations",
-      desc: "Seamlessly accept payments and connect with third-party services like Stripe, Twilio, or Slack. Reliability is key here.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-        </svg>
-      )
+      title: "Product Design",
+      desc: "User-centric UI/UX design that combines aesthetics with functionality to create intuitive and engaging digital experiences.",
+      icon: <PaintBrushIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Deployment & Scaling",
-      desc: "We don't just write code; we ship it. Full CI/CD setup, cloud infrastructure management, and monitoring for peace of mind.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-        </svg>
-      )
+      title: "Mobile Development",
+      desc: "Native and cross-platform mobile apps (iOS & Android) that deliver seamless performance and user retention.",
+      icon: <DevicePhoneMobileIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Ongoing Support",
-      desc: "Software needs maintenance. We provide ongoing updates, bug fixes, and improvements so your business never stops running.",
-      icon: (
-        <svg className="w-6 h-6 text-blue-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      )
+      title: "Strategy & Consulting",
+      desc: "Digital transformation consulting, tech stack advisory, and project audits to ensure your technology aligns with business goals.",
+      icon: <LightBulbIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     }
   ]
 
@@ -64,11 +48,10 @@ function Services() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white mb-4">
-            Services built for production
+            Integrated Services for Modern Business
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-            We focus on outcomes, not just code. From initial concept to scaling in the wild,
-            we build reliable systems that solve real business problems.
+            Stop managing multiple agencies. We provide a unified team for product, engineering, and growth.
           </p>
         </div>
 
@@ -77,7 +60,7 @@ function Services() {
           {services.map((item, index) => (
             <div
               key={index}
-              className="group p-8 card hover:border-brand-200 dark:hover:border-brand-900 hover:-translate-y-1"
+              className="group p-8 card hover:border-brand-200 dark:hover:border-brand-900 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-lg bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 {item.icon}
@@ -95,13 +78,13 @@ function Services() {
         {/* Soft CTA */}
         <div className="mt-20 text-center">
           <p className="text-gray-500 dark:text-gray-400 mb-6">
-            Not sure what you need? That’s okay.
+            Looking for something specific?
           </p>
           <a
             href="#contact"
             className="btn btn-secondary text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/20 hover:bg-brand-100 dark:hover:bg-brand-900/30 border-transparent"
           >
-            Let’s talk about your idea
+            Explore our full capabilities
             <svg className="ml-2 -mr-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
