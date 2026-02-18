@@ -25,23 +25,13 @@ import {
 export const navbarData = {
   services: [
     {
-      category: "Digital Marketing",
-      icon: <MegaphoneIcon className="w-6 h-6" />,
+      category: "Software Development",
+      icon: <CommandLineIcon className="w-6 h-6" />,
       items: [
-        { name: "Digital Marketing Services", href: "/#services" },
-        { name: "Content Marketing", href: "/#services" },
-        { name: "Email Marketing", href: "/#services" },
-        { name: "Online Public Relations", href: "/#services" }
-      ]
-    },
-    {
-      category: "SEO Services",
-      icon: <MagnifyingGlassIcon className="w-6 h-6" />,
-      items: [
-        { name: "Search Engine Optimization", href: "/#services" },
-        { name: "Local SEO", href: "/#services" },
-        { name: "Technical SEO Audit", href: "/#services" },
-        { name: "Link Building", href: "/#services" }
+        { name: "Custom Software", href: "/#services" },
+        { name: "SaaS Development", href: "/#services" },
+        { name: "API Development", href: "/#services" },
+        { name: "Mobile App Development", href: "/#services" }
       ]
     },
     {
@@ -65,16 +55,6 @@ export const navbarData = {
       ]
     },
     {
-      category: "Production",
-      icon: <VideoCameraIcon className="w-6 h-6" />,
-      items: [
-        { name: "Video Production", href: "/#services" },
-        { name: "Product Photography", href: "/#services" },
-        { name: "Motion Graphics", href: "/#services" },
-        { name: "Podcast Production", href: "/#services" }
-      ]
-    },
-    {
       category: "AI Automation",
       icon: <CpuChipIcon className="w-6 h-6" />,
       items: [
@@ -95,23 +75,13 @@ export const navbarData = {
       ]
     },
     {
-      category: "Software Development",
-      icon: <CommandLineIcon className="w-6 h-6" />,
+      category: "Digital Marketing",
+      icon: <MegaphoneIcon className="w-6 h-6" />,
       items: [
-        { name: "Custom Software", href: "/#services" },
-        { name: "SaaS Development", href: "/#services" },
-        { name: "API Development", href: "/#services" },
-        { name: "Mobile App Development", href: "/#services" }
-      ]
-    },
-    {
-      category: "Support & Maintenance",
-      icon: <LifebuoyIcon className="w-6 h-6" />,
-      items: [
-        { name: "24/7 Support", href: "/#services" },
-        { name: "Legacy System Maintenance", href: "/#services" },
-        { name: "Performance Monitoring", href: "/#services" },
-        { name: "Security Updates", href: "/#services" }
+        { name: "Digital Marketing Services", href: "/#services" },
+        { name: "Content Marketing", href: "/#services" },
+        { name: "Email Marketing", href: "/#services" },
+        { name: "Online Public Relations", href: "/#services" }
       ]
     },
     {
@@ -122,6 +92,36 @@ export const navbarData = {
         { name: "User Experience Research", href: "/#services" },
         { name: "Prototyping", href: "/#services" },
         { name: "Design Systems", href: "/#services" }
+      ]
+    },
+    {
+      category: "SEO Services",
+      icon: <MagnifyingGlassIcon className="w-6 h-6" />,
+      items: [
+        { name: "Search Engine Optimization", href: "/#services" },
+        { name: "Local SEO", href: "/#services" },
+        { name: "Technical SEO Audit", href: "/#services" },
+        { name: "Link Building", href: "/#services" }
+      ]
+    },
+    {
+      category: "Production",
+      icon: <VideoCameraIcon className="w-6 h-6" />,
+      items: [
+        { name: "Video Production", href: "/#services" },
+        { name: "Product Photography", href: "/#services" },
+        { name: "Motion Graphics", href: "/#services" },
+        { name: "Podcast Production", href: "/#services" }
+      ]
+    },
+    {
+      category: "Support & Maintenance",
+      icon: <LifebuoyIcon className="w-6 h-6" />,
+      items: [
+        { name: "24/7 Support", href: "/#services" },
+        { name: "Legacy System Maintenance", href: "/#services" },
+        { name: "Performance Monitoring", href: "/#services" },
+        { name: "Security Updates", href: "/#services" }
       ]
     }
   ],

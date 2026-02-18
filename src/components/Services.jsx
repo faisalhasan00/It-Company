@@ -1,24 +1,30 @@
 import Reveal from './Reveal'
 import {
   CommandLineIcon,
-  MegaphoneIcon,
+  CodeBracketIcon,
+  ChartBarIcon,
   CpuChipIcon,
-  PaintBrushIcon,
-  DevicePhoneMobileIcon,
-  LightBulbIcon
+  LightBulbIcon,
+  MegaphoneIcon,
+  PaintBrushIcon
 } from '@heroicons/react/24/outline';
 
 function Services() {
   const services = [
     {
-      title: "Software Engineering",
+      title: "Software Development",
       desc: "Custom web applications, secure APIs, and SaaS platforms built with modern stacks (React, Node, Python) for scale and performance.",
       icon: <CommandLineIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Digital Marketing",
-      desc: "Data-driven SEO, PPC campaigns, and content strategies that drive qualified traffic and measurable revenue growth.",
-      icon: <MegaphoneIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
+      title: "Web Design",
+      desc: "Beautiful, responsive websites that drive conversions and reflect your brand identity with pixel-perfect precision.",
+      icon: <CodeBracketIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
+    },
+    {
+      title: "Social Media",
+      desc: "Strategic social media management and marketing campaigns to grow your audience, engagement, and brand loyalty.",
+      icon: <ChartBarIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
       title: "AI & Automation",
@@ -26,19 +32,19 @@ function Services() {
       icon: <CpuChipIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     },
     {
-      title: "Product Design",
-      desc: "User-centric UI/UX design that combines aesthetics with functionality to create intuitive and engaging digital experiences.",
-      icon: <PaintBrushIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
-    },
-    {
-      title: "Mobile Development",
-      desc: "Native and cross-platform mobile apps (iOS & Android) that deliver seamless performance and user retention.",
-      icon: <DevicePhoneMobileIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
-    },
-    {
-      title: "Strategy & Consulting",
+      title: "Software Consulting",
       desc: "Digital transformation consulting, tech stack advisory, and project audits to ensure your technology aligns with business goals.",
       icon: <LightBulbIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
+    },
+    {
+      title: "Digital Marketing",
+      desc: "Data-driven SEO, PPC campaigns, and content strategies that drive qualified traffic and measurable revenue growth.",
+      icon: <MegaphoneIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
+    },
+    {
+      title: "UI/UX Design",
+      desc: "User-centric design that combines aesthetics with functionality to create intuitive and engaging digital experiences.",
+      icon: <PaintBrushIcon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
     }
   ]
 
