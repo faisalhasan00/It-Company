@@ -25,21 +25,21 @@ function Hero() {
   return (
     <Reveal className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32 bg-white dark:bg-gray-950" id="hero">
       {/* Subtle Background */}
-      <div className="absolute inset-0 -z-10 bg-white dark:bg-gray-950">
-        <div className="absolute right-0 top-0 -mr-32 -mt-32 h-[800px] w-[800px] rounded-full bg-brand-50/40 blur-3xl dark:bg-brand-900/10"></div>
+      <div className="absolute inset-0 -z-10 bg-white dark:bg-gray-950 pointer-events-none">
+        <div className="absolute right-0 top-0 -mr-32 -mt-32 h-[400px] w-[400px] sm:h-[600px] sm:w-[600px] lg:h-[800px] lg:w-[800px] rounded-full bg-brand-50/40 blur-3xl dark:bg-brand-900/10"></div>
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
           {/* Left Content */}
-          <div className="max-w-2xl animate-fade-in-up">
+          <div className="max-w-2xl animate-fade-in-up z-10 relative">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase tracking-wider mb-6">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
               Accepting New Projects
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-6 h-[3.3em] lg:h-[3.3em] sm:h-[3.3em]">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-6 min-h-[140px] sm:min-h-[160px] lg:min-h-[220px]">
               End-to-End Solutions For <br />
               <span className="text-brand-600 dark:text-brand-400 block mt-2 transition-all duration-500 ease-in-out transform">
                 {services[currentService]}
