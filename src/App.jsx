@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import CaseStudy from './pages/CaseStudy'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
+import ServiceDetail from './pages/ServiceDetail'
 
 function useTheme() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -51,6 +52,7 @@ function App() {
         <Route path="/case-study" element={<CaseStudy />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
       </Routes>
       <Footer />
     </Router>
