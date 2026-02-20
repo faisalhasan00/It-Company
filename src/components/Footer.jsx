@@ -5,7 +5,7 @@ function Footer() {
 
   const links = {
     company: [
-      { name: 'About', href: '/#hero' },
+      { name: 'About', href: '/about' },
       { name: 'How we work', href: '/#process' },
       { name: 'Trust', href: '/#trust' },
       { name: 'Contact', href: '/#contact' },

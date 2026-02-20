@@ -103,7 +103,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
 
         {/* LINKS */}
         <Link 
-          to="/#portfolio" 
+          to="/portfolio" 
           className="block py-4 font-bold text-gray-800 dark:text-white uppercase tracking-wide hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
           onClick={closeMenu}
         >
@@ -111,7 +111,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
         </Link>
         
         <Link 
-          to="/#about" 
+          to="/about" 
           className="block py-4 font-bold text-gray-800 dark:text-white uppercase tracking-wide hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
           onClick={closeMenu}
         >

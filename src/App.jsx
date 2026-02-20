@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import CaseStudy from './pages/CaseStudy'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
 
 function useTheme() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -47,6 +49,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study" element={<CaseStudy />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
       <Footer />
     </Router>

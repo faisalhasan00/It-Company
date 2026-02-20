@@ -110,10 +110,10 @@ const Navbar = ({ theme, toggleTheme }) => {
               />
             </div>
 
-            <Link to="/#portfolio" className="px-4 py-2 text-sm font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            <Link to="/portfolio" className="px-4 py-2 text-sm font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
               Client Success
             </Link>
-            <Link to="/#about" className="px-4 py-2 text-sm font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            <Link to="/about" className="px-4 py-2 text-sm font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
               About
             </Link>
             <Link to="/#contact" className="px-4 py-2 text-sm font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
